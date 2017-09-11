@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasterDataDeliveryApis", "MasterDataDeliveryApis\MasterDataDeliveryApis.csproj", "{455B1079-0B34-4F55-8758-D6FD15C0D72A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clarifi.MasterDataDeliveryApis.Tests", "Clarifi.MasterDataDeliveryApis.Tests\Clarifi.MasterDataDeliveryApis.Tests.csproj", "{FB04165A-6E0C-499A-A247-26B213752701}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAPIConsole", "..\..\DataAPIConsole\DataAPIConsole\DataAPIConsole.csproj", "{24C1D96A-4797-40EA-BFE6-109C141AB786}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{455B1079-0B34-4F55-8758-D6FD15C0D72A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{455B1079-0B34-4F55-8758-D6FD15C0D72A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{455B1079-0B34-4F55-8758-D6FD15C0D72A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{455B1079-0B34-4F55-8758-D6FD15C0D72A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB04165A-6E0C-499A-A247-26B213752701}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB04165A-6E0C-499A-A247-26B213752701}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB04165A-6E0C-499A-A247-26B213752701}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB04165A-6E0C-499A-A247-26B213752701}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24C1D96A-4797-40EA-BFE6-109C141AB786}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24C1D96A-4797-40EA-BFE6-109C141AB786}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24C1D96A-4797-40EA-BFE6-109C141AB786}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24C1D96A-4797-40EA-BFE6-109C141AB786}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
