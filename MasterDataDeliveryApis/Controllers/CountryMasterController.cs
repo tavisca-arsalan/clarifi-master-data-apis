@@ -52,7 +52,7 @@ namespace MasterDataDeliveryApis.Controllers
         }
 
         [HttpGet]
-        public List<Polygon> GetPolygonsForCountryCode(string id)
+        public List<Polygon> GetPolygonsForCountry(string id)
         {
            return new List<Polygon>();
         }
