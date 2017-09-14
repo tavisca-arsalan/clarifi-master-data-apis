@@ -87,7 +87,8 @@
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\CountryMasterController.cs" />
-    <Compile Include="DAL\CountryMasterDBManager.cs" />
+    <Compile Include="DAL\CountryMasterRepositoryManager.cs" />
+    <Compile Include="DAL\Interfaces\ICountryMasterRepository.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -108,6 +109,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Mappers\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
