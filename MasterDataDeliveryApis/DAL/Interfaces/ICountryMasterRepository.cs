@@ -9,10 +9,10 @@ namespace MasterDataDeliveryApis.DAL.Interfaces
 {
     interface ICountryMasterRepository
     {
-        List<CountryMaster> GetAllCountries();
-        CountryMaster GetCountryByName(string name);
-        CountryMaster GetCountryByIsoCode2(string isoCode2);
-        CountryMaster GetCountryByIsoCode3(string isoCode3);
-        List<Polygon> GetPolygonsForCountryCode(string isoCode2);
+        List<Country> GetAllCountries();
+        Country GetCountryByName(string name);
+        Country GetCountryByIsoCode2(string isoCode2);
+        Country GetCountryByIsoCode3(string isoCode3);
+        List<Polygon> GetPolygonsForCountry(string isoCode2);
     }
 }

@@ -5,56 +5,49 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using MasterDataDeliveryApis.Models;
+using MasterDataDeliveryApis.Mappers;
+using MasterDataDeliveryApis.Models.DataTransferObjects;
+using MasterDataDeliveryApis.DAL;
 
 namespace MasterDataDeliveryApis.Controllers
 {
     public class CountryMasterController : ApiController
     {
+        private DtoDomainMapper _mapper = new DtoDomainMapper();
+        private CountryMasterRepositoryManager _repositoryManager = new CountryMasterRepositoryManager();
         [HttpGet]
-        public IEnumerable<CountryMaster> GetAllCountries()
+        public IEnumerable<CountryDto> GetAllCountries()
         {
-            return new List<CountryMaster> {new  CountryMaster()
-                                                {
-                                                    Name = "Australia",
-                                                    IsoCode2 = "AUS"
-                                                }
-            };
+            var domainCountryList = _repositoryManager.GetAllCountries();
+            return _mapper.ToCountryDtoList(domainCountryList);
         }
 
         [HttpGet]
-        public CountryMaster GetCountryByIsoCode2(string id)
+        public CountryDto GetCountryByIsoCode2(string id)
         {
-            return new CountryMaster()
-            {
-                Name = "Australia",
-                IsoCode2 = id
-            };
+            var domainCountry = _repositoryManager.GetCountryByIsoCode2(id);
+            return _mapper.ToCountryDto(domainCountry);
         }
 
         [HttpGet]
-        public CountryMaster GetCountryByIsoCode3(string id)
+        public CountryDto GetCountryByIsoCode3(string id)
         {
-            return new CountryMaster()
-            {
-                Name = "Australia",
-                IsoCode3 = id
-            };
+            var domainCountry = _repositoryManager.GetCountryByIsoCode3(id);
+            return _mapper.ToCountryDto(domainCountry);
         }
 
         [HttpGet]
-        public CountryMaster GetCountryByName(string id)
+        public CountryDto GetCountryByName(string id)
         {
-            return new CountryMaster()
-            {
-                Name = id,
-                IsoCode2 = "AU"
-            };
+            var domainCountry = _repositoryManager.GetCountryByName(id);
+            return _mapper.ToCountryDto(domainCountry);
         }
 
         [HttpGet]
-        public List<Polygon> GetPolygonsForCountry(string id)
+        public List<PolygonDto> GetPolygonsForCountry(string id)
         {
-           return new List<Polygon>();
+            var domainPolygons = _repositoryManager.GetPolygonsForCountry(id);
+            return _mapper.ToDtoPolygons(domainPolygons);
         }
     }
 }

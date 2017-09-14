@@ -8,26 +8,26 @@ namespace MasterDataDeliveryApis.DAL
 {
     public class CountryMasterRepositoryManager: ICountryMasterRepository
     {
-        public List<Models.CountryMaster> GetAllCountries()
+        public List<Models.Country> GetAllCountries()
         {
             throw new NotImplementedException();
         }
 
-        public Models.CountryMaster GetCountryByName(string name)
+        public Models.Country GetCountryByName(string name)
         {
             throw new NotImplementedException();
         }
 
-        public Models.CountryMaster GetCountryByIsoCode2(string isoCode2)
+        public Models.Country GetCountryByIsoCode2(string isoCode2)
         {
             throw new NotImplementedException();
         }
 
-        public Models.CountryMaster GetCountryByIsoCode3(string isoCode3)
+        public Models.Country GetCountryByIsoCode3(string isoCode3)
         {
             throw new NotImplementedException();
         }
-        public List<Models.Polygon> GetPolygonsForCountryCode(string isoCode2)
+        public List<Models.Polygon> GetPolygonsForCountry(string isoCode2)
         {
             throw new NotImplementedException();
         }
